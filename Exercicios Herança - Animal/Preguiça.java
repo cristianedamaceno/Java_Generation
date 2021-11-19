@@ -1,26 +1,34 @@
-package exercicioanimal;
+package ExercicioAnimal;
 
 public class Preguiça extends Animal {
 	
-	private String subirArvore;
-	
-	public Preguiça(String nome, int idade, String som, String corre, String subirArvore) {
+	public Preguiça() {
+		super("Animal Preguiça");
 		
-		super(nome,idade,som,corre);
-		this.subirArvore = subirArvore;	
 	}
-	 public void imprimirInfo() {
-		 
-		 System.out.println("\nNome do animal: "+getNome()+"\nidade:" +getIdade()+"\nsom" +getSom()+ "\ncorre" +getCorre()+ "subir na árvore" +subirArvore);
-		 
-	 }
-	public String getSubirArvore() {
-		return subirArvore;
+
+	@Override
+	public void nome(String nomeAnimal) {
+		System.out.println("\nQual o nome da Preguça:" +nomeAnimal);
+		
+		
 	}
-	public void setSubirArvore(String subirArvore) {
-		this.subirArvore = subirArvore;
+
+	@Override
+	public void idade(int idadeAnimal) {
+		System.out.println("\nQuantos anos a Preguiça tem:" +idadeAnimal);
+		
 	}
-	 
-	 
+
+	@Override
+	public void som(String somAnimal) {
+		System.out.println("\nQual o som que a preguiça emite :" +somAnimal);
+		
+	}
+	
+	public void SubirArvores() {
+		System.out.println("\nUma das caracteristicas da preguiça é subir em árvores altas e verdes!!!!");
+		
+	}
 
 }
